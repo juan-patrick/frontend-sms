@@ -14,8 +14,28 @@
   <title>Mobizon SMS</title>
 </head>
 
-<body>
-  
+<body class="flex flex-col h-screen sm:max-w-lg bg-purple-600 m-auto">
+  <main class="flex flex-col justify-center h-3/6 w-5/6 m-auto bg-white p-10 rounded-lg">
+    <h1 class="text-3xl text-center font-bold">Mobizon SMS Sender</h1>
+
+    <section class="mt-2">
+      <div class="flex flex-col w-full my-5">
+        <label for="name" class="font-semibold mb-1">Nome</label>
+        <input type="text" name="name" id="name"
+          class="w-full h-10 bg-gray-200 rounded p-2  border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+      </div>
+      <div class="flex flex-col w-full my-5">
+        <label for="email" class="font-semibold mb-1">E-mail</label>
+        <input type="text" name="email" id="email"
+          class="w-full h-10 bg-gray-200 rounded p-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+      </div>
+      <div class="flex flex-col w-full mt-10">
+        <button
+          class="font-bold text-white h-12 w-full rounded bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ">Acessar</button>
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
