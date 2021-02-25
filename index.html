@@ -7,15 +7,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="src/styles/styles.css">
   <title>Mobizon SMS</title>
 </head>
 
-<body>
-  
+<body class="flex flex-col h-screen bg-purple-600 m-auto">
+  <main class="flex flex-col h-5/6 w-5/6 m-auto bg-white p-10 rounded-lg">
+    <h1 class="text-2xl text-center font-semibold">Mobizon SMS Sender</h1>
+
+    <header class="grid grid-cols-3 gap-5 mt-10 p-5">
+      <button
+        class="font-bold text-purple-500 h-10 w-full rounded border-2 border-purple-500 bg-white hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">Acessar</button>
+      <button
+        class="font-bold text-purple-500 h-10 w-full rounded border-2 border-purple-500 bg-white hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">Acessar</button>
+      <button
+        class="font-bold text-purple-500 h-10 w-full rounded border-2 border-purple-500 bg-white hover:bg-purple-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">Acessar</button>
+    </header>
+
+    <section class="grid grid-cols-3 gap-5 bg-gray-100 h-full w-full p-5">
+      <div class="flex flex-col bg-white py-10 px-8 rounded-md">
+        <h2 class="text-xl font-bold">Envio de SMS</h2>
+        <form class="flex w-full h-full rounded flex-col">
+          <div class="flex flex-col w-full my-5">
+            <label for="phone" class="font-semibold mb-1">Telefone</label>
+            <input type="text" name="phone" id="phone"
+              class="w-full h-10 bg-gray-100 rounded p-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+          </div>
+          <div class="flex flex-col h-full w-full my-1">
+            <label for="message" class="font-semibold mb-1">Mensagem</label>
+            <textarea type="text" name="message" id="message"
+              class="w-full h-full bg-gray-100 rounded p-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"></textarea>
+          </div>
+          <div class="flex flex-col w-full mt-5">
+            <button
+              class="font-bold text-white h-12 w-full rounded bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-sm">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <form class="h-full bg-white"></form>
+      <form class="h-full bg-white"></form>
+    </section>
+  </main>
+
 </body>
 
 </html>
