@@ -47,7 +47,33 @@
           </div>
         </form>
       </div>
-      <form class="h-full bg-white"></form>
+      <div class="flex flex-col bg-white py-10 px-8 rounded-md">
+        <h2 class="text-xl font-bold">Encurtador de URL</h2>
+        <form class="flex w-full h-full rounded flex-col">
+          <div class="flex flex-col w-full my-5">
+            <label for="url" class="font-semibold mb-1">URL</label>
+            <input type="text" name="url" id="url"
+              class="w-full h-10 bg-gray-100 rounded p-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" />
+              <p class="text-xs mt-2">Versão de testes: Link dura apenas 2 horas</p>
+          </div>
+          <div class="flex flex-col items-end w-4/3 mt-2">
+            <button
+              class="font-bold text-white h-10 w-6/12 rounded bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-sm">Enviar</button>
+          </div>
+          <hr class="my-10" />
+          <div class="flex flex-col h-full w-full my-1">
+            <label for="short-link" class="font-semibold mb-1">Link encurtado</label>
+            <div class="flex h-full w-full my-1">
+              <input type="text" name="short-link" id="short-link"
+                class="w-full h-10 bg-gray-100 rounded-l p-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" />
+              <button
+                class="flex items-center justify-center font-bold text-white h-10 w-6/12 rounded-r bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-sm">
+                <img src="src/assets/copy.svg" alt="copy-button" class="w-5">
+            </div>
+          </div>
+
+        </form>
+      </div>
       <form class="h-full bg-white"></form>
     </section>
   </main>
