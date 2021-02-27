@@ -15,7 +15,7 @@
 </head>
 
 <body class="flex flex-col h-screen bg-purple-600 m-auto">
-  <main class="flex flex-col h-5/6 w-5/6 m-auto bg-white p-10 rounded-lg">
+  <main class="flex flex-col h-full w-5/6 m-auto bg-white p-10 rounded-lg">
     <h1 class="text-2xl text-center font-semibold">Mobizon SMS Sender</h1>
 
     <header class="grid grid-cols-3 gap-5 mt-10 p-5">
@@ -54,7 +54,7 @@
             <label for="url" class="font-semibold mb-1">URL</label>
             <input type="text" name="url" id="url"
               class="w-full h-10 bg-gray-100 rounded p-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" />
-              <p class="text-xs mt-2">Versão de testes: Link dura apenas 2 horas</p>
+            <p class="text-xs mt-2">Versão de testes: Link dura apenas 2 horas</p>
           </div>
           <div class="flex flex-col items-end w-4/3 mt-2">
             <button
@@ -74,7 +74,29 @@
 
         </form>
       </div>
-      <form class="h-full bg-white"></form>
+      <div class="flex flex-col bg-white py-10 px-8 rounded-md">
+        <h2 class="text-xl font-bold">Link's encurtados</h2>
+        <div class="flex w-full h-full rounded flex-col">
+          <div class="flex flex-col h-28 w-full justify-between my-2 bg-gray-100 p-3 rounded-lg">
+            <div class="flex justify-between font-bold">
+              <p class="text-sm">Nome: Edgar</p>
+              <p class="text-sm">Clicks: 40</p>
+            </div>
+
+            <p class="text-sm">Link: https://www.google.com.br</p>
+            <p class="text-sm">Criado: 16:00 PM - 26/02/21</p>
+          </div>
+          <div class="flex flex-col h-28 w-full justify-between my-2 bg-gray-100 p-3 rounded-lg">
+            <div class="flex justify-between font-bold">
+              <p class="text-sm">Nome: Edgar</p>
+              <p class="text-sm">Clicks: 40</p>
+            </div>
+
+            <p class="text-sm">Link: https://www.google.com.br</p>
+            <p class="text-sm">Criado: 16:00 PM - 26/02/21</p>
+          </div>               
+        </div>
+      </div>
     </section>
   </main>
 
